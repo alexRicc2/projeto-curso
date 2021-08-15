@@ -1,0 +1,36 @@
+.central{
+  align-items: center;
+  background: url(../../images/fundo-central.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0,0,0, 0.7);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  height: calc(100vh - 50px);
+  justify-content: center;
+  text-align: center;
+}
+.central__titulo{
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+.central__subtitulo{
+  color: #fff;
+  font-size: 1.1rem;
+}
+.btnMatricula{
+  background-color: #fff;
+  border-radius: 5px;
+  color: #212529;
+  margin-top: 6rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+.btnMatricula:hover{
+  transform: scale(1.05);
+  background-color: #ccc;
+}

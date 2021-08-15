@@ -1,9 +1,22 @@
 import NavBar from "./components/NavBar";
+import Central from "./components/Central";
+import DescricaoSection from "./components/DescricaoSection";
+import Cursos from "./components/Cursos";
+import Depoimentos from "./components/Depoimentos";
+import FormLogin from "./components/FormLogin";
+import Video from "./components/Video";
+import Footer from "./components/Footer";
 function App() {
   return (
-    <div className="App">
+    <div>
     <NavBar></NavBar>
-     <h1>Hello world</h1>
+    <Central></Central>
+    <DescricaoSection></DescricaoSection>
+    <Cursos></Cursos>
+    <Depoimentos></Depoimentos>
+    <FormLogin></FormLogin> 
+    <Video></Video>
+    <Footer></Footer> 
     </div>
   );
 }

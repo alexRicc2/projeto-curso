@@ -1,0 +1,68 @@
+.comentarios{
+  align-items: center;
+  background-color: #213248;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+}
+.comentarios__titulo{
+  color: white;
+  font-size: 1.3rem;
+  margin: 40px auto 60px auto;
+  text-align: center;
+}
+.comentarios__cards{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: space-evenly;
+  width: 70%;
+}
+.comentarios__card{
+  background-color:#f7f0f5;
+  border-radius: 30px;
+  margin-bottom: 100px;
+  padding: 20px;
+}
+.comentarios__nome{
+  color: #3b5875;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.comentario{
+  line-height: 1.2;
+  text-align: justify;
+}
+.foto-comentario{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px solid #f7f0f5;
+  border-radius: 100%;
+  display: block;
+  height: 90px;
+  margin: auto;
+  transform: translateY(-60%);
+  width: 90px;
+}
+.comentarios__foto--paola{
+  background-image: url(../../images/paola.jpg);
+}
+.comentarios__foto--matheus{
+  background-image: url("https://unavatar.now.sh/github/matheuswferreira");
+}
+.comentarios__foto--thais{
+  background-image: url(../../images/thais2.jpeg);
+}
+@media screen and (min-width:905px){
+
+  .comentarios__cards{
+      flex-direction: row;
+      width: 100%;
+  }
+  .comentarios__card{
+      width: 28%;
+      margin-bottom: 50px;
+  }
+}

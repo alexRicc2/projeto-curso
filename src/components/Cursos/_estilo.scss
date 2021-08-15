@@ -1,0 +1,66 @@
+.secao__cursos{
+  background-color: #F7F0F5;
+  padding-bottom: 20px;
+}
+.titulo{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: .5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.cursos{
+  display: flex;
+  flex-direction: column;
+}
+
+.cursos__item{
+  background-color: #fff;
+  box-shadow: 2px 2px 2px #ccc;
+  height: 100px;
+  margin: 1%;
+  position: relative;
+  text-align: center;
+  transition: .3s;
+}
+.cursos__item:hover{
+  box-shadow: 4px 4px 4px #ccc;
+}
+.cursos__link{
+  color: #000;
+  display: block;
+  font-weight: bold;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+  width: 100%;
+}
+.cursos__link:before {
+  background: url(../../images/icone-foneOuvido.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  display: block;
+  height: 50px;
+  margin: 10px auto;
+  width: 50px;
+}
+@media screen and (min-width: 679px){
+  .cursos{
+      flex-wrap: wrap;
+      flex-direction: row;
+  }
+  .cursos__item{
+      width: 48%;
+  }
+}
+
+@media screen and (min-width: 1023px){
+
+  .cursos__item{
+      width: 31%;
+  }
+}
