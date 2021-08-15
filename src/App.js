@@ -1,22 +1,11 @@
-import NavBar from "./components/NavBar";
-import Central from "./components/Central";
-import DescricaoSection from "./components/DescricaoSection";
-import Cursos from "./components/Cursos";
-import Depoimentos from "./components/Depoimentos";
-import FormLogin from "./components/FormLogin";
-import Video from "./components/Video";
-import Footer from "./components/Footer";
+import Home from './pages/Home';
+import Cursos from './components/Cursos';
+import {Route} from 'react-router-dom';
 function App() {
   return (
     <div>
-    <NavBar></NavBar>
-    <Central></Central>
-    <DescricaoSection></DescricaoSection>
-    <Cursos></Cursos>
-    <Depoimentos></Depoimentos>
-    <FormLogin></FormLogin> 
-    <Video></Video>
-    <Footer></Footer> 
+      <Route exact path="/" component={Home}/>
+      <Route exact path="/cursos" component={Cursos}/>
     </div>
   );
 }
