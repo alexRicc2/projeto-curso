@@ -2,6 +2,7 @@ import React from 'react';
 import google from '../../images/icone_google.png';
 import facebook from '../../images/icone_facebook.png';
 export default function FormLogin() {
+  
   return (
     <form className="form" id="matricula">
       <span className="form__titulo">Já sou Aluno</span>
@@ -15,7 +16,7 @@ export default function FormLogin() {
       <div className="form__secao">
         <div>
           <input type="checkbox" id="ckb" />
-          <label for="ckb">Lembrar de mim</label>
+          <label htmlFor="ckb">Lembrar de mim</label>
         </div>
         <div>
           <a href="./index.html" className="form__esqueci">Esqueci a senha</a>
