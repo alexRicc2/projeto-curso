@@ -2,6 +2,7 @@ import FormPersonalData from './FormPersonalData';
 import FormPagamento from './FormPagamento';
 import FormConectar from './FormConectar';
 import Sucesso from './Sucesso';
+import Erro from './Erro';
 import { useForm, useStep } from 'react-hooks-helper';
 
 export default function UseForm() {
@@ -50,6 +51,10 @@ export default function UseForm() {
     case "Sucesso":
       return(
         <Sucesso {...props}/>
+      )
+    default:
+      return(
+        <Erro/>
       )
   }
 }

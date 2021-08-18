@@ -8,7 +8,7 @@ export default function FormPagamento({ FormData, setForm, navigation }) {
   return (
     <form className="cadastroFormulario" onSubmit={() => navigation.next()}>
       <div className="cadastroFormulario__header">
-        <img src={arrow} className="cadastroFormulario__arrow" onClick={() => navigation.previous()}></img>
+        <img src={arrow} className="cadastroFormulario__arrow" onClick={() => navigation.previous()} alt="voltar"></img>
         <h2 className="cadastroFormulario__titulo">Informações de Pagamento</h2>
       </div>
       <div className="cartoes">
