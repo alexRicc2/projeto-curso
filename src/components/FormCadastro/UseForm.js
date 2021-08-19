@@ -4,18 +4,18 @@ import FormConectar from './FormConectar';
 import Sucesso from './Sucesso';
 import Erro from './Erro';
 import { useForm, useStep } from 'react-hooks-helper';
-
+import {validacoes} from './validacoes';
 export default function UseForm() {
 
   const defaultData = {
-    nome: 'alex Ricardo',
+    nome: '',
     email: '',
     cpf: '',
     cell: '',
-    numCartao: '1',
-    titular: '2',
-    sobrenome: '3',
-    codSeguranca: '5',
+    numCartao: '',
+    titular: '',
+    sobrenome: '',
+    codSeguranca: '',
     username: '',
     senha1: '',
     senha2: ''
@@ -33,8 +33,7 @@ export default function UseForm() {
     steps,
     initialStep: 0
   })
-  const props = { FormData, setForm, navigation}
-
+  const props = { FormData, setForm, navigation, validacoes}
   switch (step.id) {
     case "personalData":
       return (

@@ -11,9 +11,9 @@ export default function FormConectar({FormData, setForm, navigation}){
         <img src={arrow} className="cadastroFormulario__arrow" onClick={() => navigation.previous()} alt="voltar"></img>
         <h2 className="cadastroFormulario__titulo">Acesso à conta</h2>
       </div>
-    <TextField id="outlined-basic" label="Username" variant="outlined" value={username} name="username" onChange={setForm} required margin="normal"/>
-      <TextField id="outlined-basic" label="Senha" variant="outlined" value={senha1} name="senha1" onChange={setForm} required margin="normal"/>
-      <TextField id="outlined-basic" label="Confirmar Senha" variant="outlined" value={senha2} name="senha2" onChange={setForm} required margin="normal"/>
+    <TextField label="Username" variant="outlined" value={username} name="username" onChange={setForm} required margin="normal"/>
+      <TextField type="password" label="Senha" variant="outlined" value={senha1} name="senha1" onChange={setForm} required margin="normal"/>
+      <TextField type="password" label="Confirmar Senha" variant="outlined" value={senha2} name="senha2" onChange={setForm} required margin="normal"/>
     <button type="submit" className="cadastroFormulario__submit">Finalizar Cadastro</button>
     </form>
   )
