@@ -1,3 +1,19 @@
+.cadastroFormulario-main{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+@media screen and (max-width:768px){
+  .cadastroFormulario-main{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 425px){
+  .cadastroFormulario-main{
+    padding: 1rem;
+  }
+}
 .cadastroFormulario{
   color: #444;
   display: flex;
@@ -13,21 +29,28 @@
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
 }
 .cadastroFormulario__arrow{
   width: 24px;
-  position: absolute;
-  left: 16px;
 }
+
 .cadastroFormulario__titulo{
   text-align: center;
   font-size: 2rem;
   line-height: 1.5;
   text-transform: uppercase;
+  flex-grow: 1;
+  position: relative;
 }
 @media screen and (max-width:768px) {
+  .cadastroFormulario{
+    width: 100%;
+    max-width: unset;
+    margin-bottom: 1rem;
+  }
+  
   .cadastroFormulario__titulo{
     font-size: 1.5rem;
   }
@@ -76,4 +99,62 @@
 }
 .amex{
   background-position: 0px -100px;
+}
+
+.mensagem-cadastro{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width:768px){
+  .mensagem-cadastro{
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 375px){
+  .mensagem-cadastro{
+    width: 100%;
+  }
+  
+}
+.card-mensagem{
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 3px #ccc;
+  background-color: #fff;
+  color: #444;
+  text-align: center;
+}
+.card-mensagem__header{
+  padding: 1.5rem 2rem;
+  border: 1px solid #ccc;
+}
+.card-mensagem__header__titulo{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.card-mensagem__corpo{
+  border: 1px solid #ccc;
+  padding: 2rem;
+}
+.card-mensagem__corpo ul li{
+  text-align: left;
+  margin-bottom: 16px;
+  padding-left: 10%;
+}
+.card-mensagem__corpo ul li i{
+  color: #0DAB76;
+  margin-right: 12px;
+}
+.card-mensagem__plano{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.card-mensagem__price{
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
