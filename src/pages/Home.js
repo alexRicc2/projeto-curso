@@ -17,7 +17,7 @@ export default function Home(){
     <Cursos></Cursos>
     <Depoimentos></Depoimentos>
     <FormLogin></FormLogin> 
-    <Video></Video>
+    {/* <Video></Video> */}
     <Footer></Footer> 
     </div>
   )

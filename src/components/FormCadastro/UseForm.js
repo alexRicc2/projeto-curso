@@ -7,6 +7,7 @@ import { useForm, useStep } from 'react-hooks-helper';
 import {validacoes} from './validacoes';
 export default function UseForm() {
 
+  
   const defaultData = {
     nome: '',
     email: '',
@@ -33,7 +34,10 @@ export default function UseForm() {
     steps,
     initialStep: 0
   })
+  
+  
   const props = { FormData, setForm, navigation, validacoes}
+
   switch (step.id) {
     case "personalData":
       return (
